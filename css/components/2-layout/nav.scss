@@ -1,0 +1,201 @@
+// nav start
+.nav {
+    width: calc(100% - 430px);
+    @include transition;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        @include transition;
+
+        &-links {
+            display: flex;
+            align-items: flex-end;
+            @include transition;
+        }
+
+        &-link {
+            padding: 5px;
+            margin-right: 5px;
+            color: $gray;
+            font-family: $west;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1;
+            @include transition;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &::before {
+        top: 20%;
+        width: calc(100% - 0.4rem);
+        height: 4px;
+        background-color: $main;
+        border-radius: 0.125rem;
+        transition: all 0.3s ease;
+        content: "";
+        position: absolute;
+        left: 50%;
+        @include transformX;
+    }
+
+    &::after {
+        bottom: 20%;
+        width: calc(100% - 0.4rem);
+        height: 4px;
+        background-color: $main;
+        border-radius: 0.125rem;
+        transition: all 0.3s ease;
+        content: "";
+        position: absolute;
+        left: 50%;
+        @include transformX;
+    }
+
+    &.active {
+        &::before {
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::after {
+            bottom: 50%;
+            -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+            transform: translate(-50%, 50%) rotate(-45deg);
+        }
+    }
+}
+
+// nav end
+
+// 1180px
+@mixin nav-xlg-xxlg {
+    .nav {
+        width: calc(100% - 350px);
+
+        &__inner {
+            &-link {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// 1024px
+@mixin nav-lg-xlg {
+    .nav {
+        width: calc(100% - 300px);
+
+        &__inner {
+            &-links {
+                margin-right: 40px;
+            }
+
+            &-link {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// 840px
+@mixin nav-md-lg {
+    .nav {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 90px);
+        z-index: 100;
+        background: rgba($color: #000000, $alpha: 0.4);
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        @include transition;
+
+        &.active {
+            @include transformReset;
+        }
+
+        &__inner {
+            flex-direction: column;
+            -ms-flex-direction: column;
+            position: absolute;
+            justify-content: unset;
+            align-items: unset;
+            top: 0;
+            right: 0;
+            width: 250px;
+            padding: 0;
+            z-index: 1;
+            padding: 20px;
+            height: calc(100% - 40px);
+            overflow-y: auto;
+            background: #f8fbf4;
+
+            &-links {
+                margin-bottom: 30px;
+                flex-direction: column;
+                align-items: unset;
+            }
+
+            &-link {
+                border: none;
+                padding: 15px;
+                display: block;
+                text-align: left;
+                width: unset;
+                color: $black;
+                margin-right: 0;
+                font-size: 16px;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+// 700px
+@mixin nav-sm-md {
+    .nav {
+        top: 77px;
+        height: calc(100% - 78px);
+    }
+}
+
+// 540px
+@mixin nav-xsm-sm {
+    .nav {
+        top: 62px;
+        height: calc(100% - 63px);
+    }
+}
+
+// 390px
+@mixin nav-xxsm-xsm {
+    .nav {
+        top: 59px;
+        height: calc(100% -60px);
+
+        &__inner {
+            width: 200px;
+        }
+    }
+}

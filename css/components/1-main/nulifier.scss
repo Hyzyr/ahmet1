@@ -1,0 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*** 
+====================================================================
+Global Settings
+====================================================================
+ ***/
+
+body {
+  font-family: $west;
+  font-weight: 400;
+  font-size: 17px;
+  color: $black;
+  background-color: $white;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $black;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: $green;
+  font-family: $west;
+  font-weight: 400;
+  @include transition;
+}

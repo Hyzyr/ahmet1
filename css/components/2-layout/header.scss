@@ -1,0 +1,101 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    background-color: $white;
+
+    &__inner {
+        margin: 0 auto;
+        max-width: 1090px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 360px;
+            @include transition;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// 1180px
+@mixin header-xlg-xxlg {
+    .header {
+        &__inner {
+            &-logo {
+                width: 320px;
+            }
+        }
+    }
+}
+
+// 1024px
+@mixin header-lg-xlg {
+    .header {
+        &__inner {
+            &-logo {
+                width: 260px;
+            }
+        }
+    }
+}
+
+// 840px
+@mixin header-md-lg {
+    .header {
+        &__inner {
+            align-items: center;
+
+            .burger {
+                display: block;
+            }
+        }
+    }
+}
+
+// 700px
+@mixin header-sm-md {
+    .header {
+        &__inner {
+            &-logo {
+                width: 200px;
+            }
+        }
+    }
+}
+
+// 540px
+@mixin header-xsm-sm {
+    .header {
+        padding: 15px 0;
+
+        &__inner {
+            &-logo {
+                width: 160px;
+            }
+        }
+    }
+}
+
+// 390px
+@mixin header-xxsm-xsm {
+    .header {
+        &__inner {
+            &-logo {
+                width: 140px;
+            }
+        }
+    }
+}

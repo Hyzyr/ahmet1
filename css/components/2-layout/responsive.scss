@@ -1,0 +1,172 @@
+// 1340px
+@include xxlg-xxxlg {
+    // index start
+    @include intro-xxlg-xxxlg;
+    // index end
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
+// 1180px
+@include xlg-xxlg {
+    // layout start
+    @include header-xlg-xxlg;
+    @include nav-xlg-xxlg;
+    @include copyright-xlg-xxlg;
+    // layout end
+
+    // index start
+    @include intro-xlg-xxlg;
+    // index end
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+}
+
+// 1024px
+@include lg-xlg {
+    // layout start
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
+    @include work-lg-xlg;
+    @include copyright-lg-xlg;
+    // layout end
+
+    // index start
+    @include intro-lg-xlg;
+    // index end
+
+    .auto__container {
+        padding: 0 30px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 17px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+}
+
+// 840px
+@include md-lg {
+    // layout start
+    @include header-md-lg;
+    @include nav-md-lg;
+    @include work-md-lg;
+    @include footer-md-lg;
+    // layout end
+
+    // index start
+    @include intro-md-lg;
+    // index end
+
+    .button {
+        &.primary {
+            padding: 15px;
+        }
+    }
+}
+
+// 700px
+@include sm-md {
+    // layout start
+    @include header-sm-md;
+    @include nav-sm-md;
+    // layout end
+
+    // index start
+    @include intro-sm-md;
+    // index end
+}
+
+// 580px
+@include pre-sm-md {
+    // layout start
+    @include work-pre-sm-md;
+    @include footer-pre-sm-md;
+    @include copyright-pre-sm-md;
+    // layout end
+}
+
+// 540px
+@include xsm-sm {
+    // layout start
+    @include header-xsm-sm;
+    @include nav-xsm-sm;
+    // layout end
+
+    // index start
+    @include intro-xsm-sm;
+    @include about-xsm-sm;
+    // index end
+
+    .auto__container {
+        padding: 0 16px;
+    }
+}
+
+// 390px
+@include xxsm-xsm {
+    // layout start
+    @include header-xxsm-xsm;
+    @include nav-xxsm-xsm;
+    @include work-xxsm-xsm;
+    @include footer-xxsm-xsm;
+    @include copyright-xxsm-xsm;
+    // layout end
+
+    // index start
+    @include intro-xxsm-xsm;
+    // index end
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 18px;
+
+        &.sm {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.work {
+    &__inner {
+        box-sizing: border-box;
+        padding: 30px;
+        background-color: $secondary;
+
+        &-content {
+            margin: 0 auto;
+            max-width: 860px;
+
+            h3 {
+                margin-bottom: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__row {
+        margin: 0 -10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &-block {
+            box-sizing: border-box;
+            padding: 14px;
+            padding-bottom: 24px;
+            margin: 0 10px;
+            width: calc(33.33333% - 20px);
+            background-color: $white-1;
+            text-align: center;
+
+            &-image {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h5 {
+                margin-bottom: 20px;
+            }
+
+            a {
+                font-family: $west;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: $green;
+                @include transition;
+
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+// 1024px
+@mixin work-lg-xlg {
+    .work {
+        &__inner {
+            &-content {
+                h3 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &__row {
+            &-block {
+                h5 {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+// 840px
+@mixin work-md-lg {
+    .work {
+        &__inner {
+            padding-bottom: 20px;
+
+            &-content {
+                h3 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__row {
+            margin: 0 -10px;
+
+            &-block {
+                margin: 10px;
+                width: calc(50% - 20px);
+            }
+        }
+    }
+}
+
+// 580px
+@mixin work-pre-sm-md {
+    .work {
+        &__inner {
+            padding: 30px;
+        }
+
+        &__row {
+            margin: 0;
+
+            &-block {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 100%;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// 390px
+@mixin work-xxsm-xsm {
+    .work {
+        &__inner {
+            padding: 20px;
+        }
+    }
+}
