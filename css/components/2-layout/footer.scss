@@ -50,16 +50,20 @@
                 }
 
                 &:first-child {
-                    width: 46px;
-                    height: 46px;
-                    font-size: 46px;
+                    width: 48px;
+                    height: 48px;
+                    font-size: 48px;
                 }
 
                 &:nth-child(2) {
                     background-color: #959595;
                     border-radius: 50%;
                     align-items: flex-end;
-                    font-size: 32px;
+                    font-size: 36px;
+
+                    span {
+                        margin-bottom: -2px;
+                    }
                 }
 
                 &:last-child {
@@ -137,7 +141,7 @@
                     }
 
                     &:nth-child(2) {
-                        font-size: 28px;
+                        font-size: 32px;
                     }
 
                     &:last-child {

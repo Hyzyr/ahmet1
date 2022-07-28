@@ -35,7 +35,7 @@ Global Settings
 
 body {
   font-family: $west;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 17px;
   color: $black;
   background-color: $white;
@@ -60,6 +60,6 @@ h5,
 h6 {
   color: $green;
   font-family: $west;
-  font-weight: 400;
+  font-weight: 300;
   @include transition;
 }

@@ -14,9 +14,19 @@ window.onclick = function (event) {
   }
 };
 
+// Sticky Header
+$(window).scroll(function () {
+  var sticky = $('.header'),
+    scroll = $(window).scrollTop();
+
+  if (scroll >= 10) sticky.addClass('sticky');
+  else sticky.removeClass('sticky');
+});
+
 // Slider
 $(".intro__inner").slick({
   fade: true,
+  adaptiveHeight: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,

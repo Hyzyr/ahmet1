@@ -6,7 +6,10 @@
     width: 100%;
     padding-top: 17px;
     padding-bottom: 20px;
-    background-color: $white;
+
+    &.sticky {
+        background-color: $white;
+    }
 
     &__inner {
         margin: 0 auto;
