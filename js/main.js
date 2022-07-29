@@ -26,7 +26,6 @@ $(window).scroll(function () {
 // Slider
 $(".intro__inner").slick({
   fade: true,
-  adaptiveHeight: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
