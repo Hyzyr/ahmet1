@@ -1187,7 +1187,7 @@ p.sm {
 
   .nav {
     top: 62px;
-    height: calc(100% - 63px);
+    height: calc(100% - 62px);
   }
 
   .intro {
