@@ -18,6 +18,7 @@
                 height: 100%;
                 font-size: 30px;
                 content: url("../images/icons/arrow-left.png");
+                @include transition;
             }
         }
 
@@ -37,6 +38,7 @@
                 height: 100%;
                 font-size: 30px;
                 content: url("../images/icons/arrow-right.png");
+                @include transition;
             }
         }
 
@@ -224,19 +226,7 @@
                 &-content {
                     padding-bottom: 80px;
                     width: 100%;
-                    height: 270px;
-
-                    h4 {
-                        max-height: 52px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-
-                    p {
-                        max-height: 66px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
+                    flex-grow: 1;
                 }
             }
         }
@@ -254,18 +244,6 @@
 @mixin intro-xsm-sm {
     .intro {
         padding-top: 64px;
-
-        &__inner {
-            &-slide {
-                &-content {
-                    height: 290px;
-
-                    p {
-                        max-height: 88px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -273,28 +251,6 @@
 @mixin intro-xxsm-xsm {
     .intro {
         padding-top: 60px;
-
-        &__inner {
-            &-slide {
-                &-content {
-                    height: 250px;
-
-                    h4 {
-                        margin-bottom: 10px;
-                        max-height: 40px;
-                    }
-
-                    p {
-                        max-height: 72px;
-                    }
-
-                    a {
-                        font-size: 14px;
-                        line-height: 18px;
-                    }
-                }
-            }
-        }
     }
 }
 

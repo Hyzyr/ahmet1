@@ -48,7 +48,7 @@
             a {
                 font-family: $west;
                 font-weight: 300;
-                font-size: 18px;
+                font-size: 17px;
                 line-height: 24px;
                 color: $green;
                 @include transition;
@@ -79,8 +79,8 @@
                 }
 
                 a {
-                    font-size: 16px;
-                    line-height: 22px;
+                    font-size: 15px;
+                    line-height: 23px;
                 }
             }
         }
@@ -101,11 +101,11 @@
         }
 
         &__row {
-            margin: 0 -10px;
+            margin: 0 -7px;
 
             &-block {
-                margin: 10px;
-                width: calc(50% - 20px);
+                margin: 7px;
+                width: calc(50% - 14px);
             }
         }
     }

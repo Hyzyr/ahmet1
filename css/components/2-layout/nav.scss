@@ -175,7 +175,7 @@
 @mixin nav-sm-md {
     .nav {
         top: 77px;
-        height: calc(100% - 78px);
+        height: calc(100% - 77px);
     }
 }
 
@@ -191,7 +191,7 @@
 @mixin nav-xxsm-xsm {
     .nav {
         top: 59px;
-        height: calc(100% -60px);
+        height: calc(100% - 59px);
 
         &__inner {
             width: 200px;
